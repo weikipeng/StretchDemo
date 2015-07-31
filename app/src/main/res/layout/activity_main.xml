@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#A020F0"
+            android:text="one" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFF00"
+            android:text="two" />
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#1C86EE"
+            android:text="three" />
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#FF1493"
+            android:text="four" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:text="只需简单的三步就可以实现水平效果:\n\n1.  measureSize(screentWidth);设置为计算屏幕宽度.\n\n2.  StretchAnimation实例化时修改为 StretchAnimation.TYPE.horizontal 水平效果.\n\n3.  修改XML布局Linearlayout属性 android:orientation='horizontal'为水平"
+        android:textColor="@android:color/primary_text_light" 
+        />
+
+</LinearLayout>
