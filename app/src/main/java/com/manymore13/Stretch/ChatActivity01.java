@@ -5,10 +5,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
-import android.view.animation.BounceInterpolator;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -20,7 +17,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshListView;
 /**
  * Created by WikiPeng on 15/7/31 下午7:24.
  */
-public class ChatActivity extends Activity implements View.OnClickListener {
+public class ChatActivity01 extends Activity implements View.OnClickListener {
     private LinearLayout mChatLayout;
     private PullToRefreshListView mListViewTop;
     private PullToRefreshListView mListViewBottom;
@@ -46,7 +43,7 @@ public class ChatActivity extends Activity implements View.OnClickListener {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        setContentView(R.layout.activity_chat_01);
 
         initView();
         initData();

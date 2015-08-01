@@ -81,17 +81,17 @@ public class StretchActivity extends Activity implements
 	}
 	
 	private void initStretchAnimation(){
-		DisplayMetrics metric = new DisplayMetrics();
-		getWindowManager().getDefaultDisplay().getMetrics(metric);
-		screentWidth = metric.widthPixels;
-		screentHeight= metric.heightPixels;
-		//
-		measureSize(screentHeight);
-		stretchAnimation = new StretchAnimation(maxSize, minSize, StretchAnimation.Orientation.vertical, 500);
-		stretchAnimation.setInterpolator(new BounceInterpolator());
-		stretchAnimation.setDuration(800);
-		stretchAnimation.setOnAnimationListener(this);
-	}
+        DisplayMetrics metric = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metric);
+        screentWidth = metric.widthPixels;
+        screentHeight= metric.heightPixels;
+        //
+        measureSize(screentHeight);
+        stretchAnimation = new StretchAnimation(maxSize, minSize, StretchAnimation.Orientation.vertical, 500);
+        stretchAnimation.setInterpolator(new BounceInterpolator());
+        stretchAnimation.setDuration(800);
+        stretchAnimation.setOnAnimationListener(this);
+    }
 
 
 	/**
