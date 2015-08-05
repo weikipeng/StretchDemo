@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.animation.BounceInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.LinearLayout;
 
 import com.example.xinxindemo.R;
@@ -88,7 +89,8 @@ public class StretchActivity extends Activity implements
         //
         measureSize(screentHeight);
         stretchAnimation = new StretchAnimation(maxSize, minSize, StretchAnimation.Orientation.vertical, 500);
-        stretchAnimation.setInterpolator(new BounceInterpolator());
+//        stretchAnimation.setInterpolator(new BounceInterpolator());
+        stretchAnimation.setInterpolator(new LinearInterpolator());
         stretchAnimation.setDuration(800);
         stretchAnimation.setOnAnimationListener(this);
     }
